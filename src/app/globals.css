@@ -1,7 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import 'locomotive-scroll/dist/locomotive-scroll.css';
 
 @custom-variant dark (&:is(.dark *));
+
 
 body {
   font-family: var(--font-poppins), sans-serif;

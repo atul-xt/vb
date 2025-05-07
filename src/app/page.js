@@ -200,7 +200,7 @@ const Horoscope = [
 
 export default function Home() {
   return (
-    <>
+    <main data-scroll-section>
       <section className="bg-orange-100">
         <div className="max-w-7xl mx-auto py-10">
           <div className="text-center">
@@ -314,6 +314,6 @@ export default function Home() {
       <section>
         <AboutUs />
       </section>
-    </>
+    </main>
   );
 }

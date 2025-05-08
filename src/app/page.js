@@ -202,6 +202,7 @@ const Horoscope = [
 
 
 export default function Home() {
+
   return (
     <main>
       <section>
@@ -278,11 +279,49 @@ export default function Home() {
         </div>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 md:gap-x-10 md:gap-y-6 lg:gap-x-16 lg:gap-y-8 max-w-6xl mx-auto">
           {Horoscope.map((sign, index) => (
-            <div key={index} className='relative text-center group cursor-pointer'>
-              <div className="h-22 w-22 md:h-28 md:w-28 animate-spin-slow group-hover:border-purple-500 group-hover:border-b-4 rounded-full border-b-2 border-t-4 border-orange-500">
+            <div key={index} className='relative text-center group cursor-pointer w-32 h-32'>
+              {/* Spinning Circle */}
+              <div className="h-full w-full animate-spin-slow group-hover:border-purple-500 group-hover:border-b-4 rounded-full border-b-2 border-t-4 border-orange-500 relative z-10"></div>
+
+              {/* Icon in center */}
+              <img
+                className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-10 w-10 md:h-12 md:w-12 group-hover:scale-115 duration-200 ease-linear z-20'
+                src={sign.imgSrc}
+                alt={sign.name}
+              />
+
+              {/* Curved Buttons */}
+              <div className='absolute inset-0 hidden group-hover:flex items-center justify-center z-10'>
+                {/* Top (0°) */}
+                <button className="absolute top-5 left-0 translate-x-1/2 -translate-y-1/2 text-xs bg-purple-300 text-purple-900 cursor-pointer hover:bg-purple-600 hover:text-white px-2 py-1 rounded-sm shadow animate-float-slow"
+                  style={{ animationDelay: "0s" }}
+                >
+                  Today
+                </button>
+                {/* Right (90°) */}
+                <button className="absolute top-10 right-0 -translate-y-1/2 translate-x-1/2 text-xs bg-purple-300 text-purple-900 cursor-pointer hover:bg-purple-600 hover:text-white px-2 py-1 rounded-sm shadow animate-float-slow"
+                  style={{ animationDelay: "0.2s" }}
+                >
+                  Tomorrow
+                </button>
+                {/* Bottom (180°) */}
+                <button className="absolute bottom-8 left-0 -translate-x-1/2 -translate-y-1/2  text-xs bg-purple-300 text-purple-900 cursor-pointer hover:bg-purple-600 hover:text-white px-2 py-1 rounded-sm shadow animate-float-slow"
+                  style={{ animationDelay: "0.4s" }}
+                >
+                  Weekly
+                </button>
+                {/* Left (270°) */}
+                <button className="absolute bottom-0 right-0 -translate-y-1/2 translate-x-1/2 text-xs bg-purple-300 text-purple-900 cursor-pointer hover:bg-purple-600 hover:text-white px-2 py-1 rounded-sm shadow animate-float-slow"
+                  style={{ animationDelay: "0.5s" }}
+                >
+                  Monthly
+                </button>
               </div>
-              <img className='absolute top-12 md:top-14 left-1/2 -translate-x-1/2 -translate-y-1/2 h-10 w-10 md:h-12 md:w-12 group-hover:scale-115 duration-200 ease-linear' src={sign.imgSrc} alt={sign.name} />
-              <h3 className='mt-1 text-sm font-semibold text-red-800 group-hover:text-purple-500'>{sign.name}</h3>
+
+              {/* Name */}
+              <h3 className='mt-2 text-sm font-semibold text-red-800 group-hover:text-purple-500'>
+                {sign.name}
+              </h3>
             </div>
           ))}
         </div>

@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useRef, useState } from 'react';
-import dynamic from 'next/dynamic';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 
 let LocomotiveScroll;

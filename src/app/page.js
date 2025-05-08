@@ -13,110 +13,113 @@ import FreeKundliForm from '@/components/FreeKundliForm';
 import MaleHoroscopeForm from '@/components/MaleHoroscopeForm';
 import PodcastSection from '@/components/PodcastSection';
 import AboutUs from '@/components/AboutUs';
+import Footer from '@/components/Footer';
+import AdvertisementBanner from '@/components/AdvertisementBanner';
+import MainBanner from '@/components/MainBanner';
 
 const people = [
   {
     name: "Marriage Astrology",
     url: "marriage-astrology",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/file-icons_ring.png",
+    icon: "/images/icons/file-icons_ring.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1742288874-1726901932-1715588197-marriage-astrology.webp&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Property Astrology",
     url: "property-astrology",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/property-astrology.png",
+    icon: "/images/icons/property-astrology.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1726900691-1725270162-Property-Yoga-in-your-Horoscope.webp&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Business Astrology",
     url: "business-astrology.php",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/ba.png",
+    icon: "/images/icons/ba.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1727183232-business.webp&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Court / legal Issues",
     url: "court-case-astrology.php",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/court-legal-Issues.png",
+    icon: "/images/icons/court-legal-Issues.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1726900268-1714203534-court-case-prediction-as-per-astrology.webp&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Career Astrology",
     url: "career-astrology",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/career-astrology.png",
+    icon: "/images/icons/career-astrology.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1726900035-1714801466-career-Astrology-Your-path-to-success.webp&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Health Astrology",
     url: "health-astrology.php",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/ha.png",
+    icon: "/images/icons/ha.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1726900847-1721035651-health-astrology.webp&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Loan and Debt",
     url: "finance-astrology",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/loan-debt.png",
+    icon: "/images/icons/loan-debt.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1743149438-banner-430-155-know-how-you-can-be-loan-free.jpg&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Children Astrology",
     url: "children-astrology.php",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/children-astrology.png",
+    icon: "/images/icons/children-astrology.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1726901420-1721038426-children-astrology.webp&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Betting & Gambling",
     url: "astrology-for-betting.php",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/icons.png",
+    icon: "/images/icons/icons.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1728041405-Planetary-combinations-for-Betting-and-Gambling.jpg&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "All about Vastu",
     url: "vastu.php",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/allabout-vastu.png",
+    icon: "/images/icons/allabout-vastu.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1744890144-430-155-Vastu-shastra-The-science-of-architecture.jpg&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Foreign Settlement",
     url: "foreign-settlement-astrology.php",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/foreign-settlement.png",
+    icon: "/images/icons/foreign-settlement.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1726901112-1723789381-Foreign-Settlement.webp&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Vastu for commercial",
     url: "vastu-for-commercial.php",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/vfc.png",
+    icon: "/images/icons/vfc.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1744890144-430-155-Vastu-shastra-The-science-of-architecture.jpg&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Past life Readings",
     url: "past-life-reading",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/pastlife-readings.png",
+    icon: "/images/icons/pastlife-readings.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1726901213-1724735904-Past-Life-Reading-By-Date-Of-Birth.webp&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Share market Astrology",
     url: "share-market-astrology.php",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/birth-time-correction.png",
+    icon: "/images/icons/birth-time-correction.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1726901588-1724242649-Get-success-in-share-market-using-astrology%20(1).webp&w=750&q=75",
     problemSolved: "10K",
   },
   {
     name: "Birth time Correction",
     url: "birth-time-rectification",
-    imgSrc: "https://www.vinaybajrangi.com/asset_frontend/img/life-icons/btc.png",
+    icon: "/images/icons/btc.webp",
     bgUrl: "https://www.vinaybajrangi.com/_next/image?url=https%3A%2F%2Fcontent.vinaybajrangi.com%2Fimg%2Fcontent%2F1726901264-1725452173-banners-936-337-correct-your-birth-time-using-astrology.webp&w=750&q=75",
     problemSolved: "10K",
   },
@@ -200,7 +203,7 @@ const Horoscope = [
 
 export default function Home() {
   return (
-    <main data-scroll-section>
+    <main>
       <section className="bg-orange-100">
         <div className="max-w-7xl mx-auto py-10">
           <div className="text-center">
@@ -240,16 +243,21 @@ export default function Home() {
                     <div className='h-36'>
                       <img className='w-full h-full object-cover' src={card.bgUrl} alt={card.name} />
                     </div>
-                    <div className=' flex justify-between items-center px-3 py-4 bg-red-700'>
+                    <div className=' flex justify-between items-center px-3 py-4 bg-white'>
                       <div>
-                        <div className='mb-1 text-white flex gap-1 items-center'>
-                          <img className='h-6 w-6' src={card.imgSrc} alt="icon" />
+                        <div className='mb-1 text-black flex gap-1 items-center'>
+                          <img className='h-5 w-5' src={card.icon} alt="icon" />
                           <h2 className='font-semibold'>{card.name}</h2>
                         </div>
-                        <span className='ml-5 font-semibold bg-green-400 px-3 py-0.5 rounded-full text-black text-xs'>{card.problemSolved}+ Problems Solved</span>
+                        <span className='ml-5 font-semibold bg-green-200 px-3 py-0.5 rounded-full text-green-600 text-xs'>{card.problemSolved}+ Problems Solved</span>
                       </div>
                       <div>
-                        <button className='bg-white active:scale-90 duration-100 ease-linear shadow-lg border border-gray-200 cursor-pointer py-2 px-5 rounded-lg text-xs font-semibold'>Know More</button>
+                        <button className="bg-white hover:scale-95 duration-200 transition ease-linear active:scale-105 hover:bg-orange-600 hover:text-white cursor-pointer text-red-900 flex gap-1 border border-red-800 shadow-lg px-4 py-2 rounded-md text-sm font-medium">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="size-5">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                          </svg>
+                          Know More
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -278,9 +286,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className='w-full'>
-          <Image className='w-full h-full' src="https://content.vinaybajrangi.com/img/content/website-banner.webp" height={400} width={400} unoptimized alt='Banner' />
-        </div>
+        <MainBanner />
       </section>
 
       <section className='bg-red-50'>
@@ -303,16 +309,33 @@ export default function Home() {
       <section className=' bg-red-50'>
         <CalculatorSection />
       </section>
-      <section className='py-10 max-w-7xl mx-auto flex'>
-        <MoonSignForm />
-        <FreeKundliForm />
-        <MaleHoroscopeForm />
+
+      <section className='py-10 max-w-7xl mx-auto'>
+        <div className="text-center">
+          <h1 className="text-red-900 text-3xl font-semibold">Explore Your Vedic Profile – Instantly & Free</h1>
+          <p className="mt-1 max-w-2xl mx-auto ">Unlock the secrets of your stars with our free astrology tools! Generate your Kundli, check Horoscope Compatibility, and Discover Your Moon Sign.</p>
+        </div>
+        <div className='mt-10 flex'>
+          <MoonSignForm />
+          <FreeKundliForm />
+          <MaleHoroscopeForm />
+        </div>
       </section>
+
+      <section>
+        <AdvertisementBanner />
+      </section>
+
       <section>
         <PodcastSection language="English" />
       </section>
+
       <section>
         <AboutUs />
+      </section>
+
+      <section>
+        <Footer />
       </section>
     </main>
   );

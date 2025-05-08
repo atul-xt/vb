@@ -36,22 +36,40 @@ body {
 
 .marquee-item {
   flex: 0 0 auto;
-  width: 9rem; /* w-36 */
-  height: 9rem; /* h-36 */
+  width: 9rem;
+  /* w-36 */
+  height: 9rem;
+  /* h-36 */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 2.5rem; /* gap-10 */
+  margin-right: 2.5rem;
+  /* gap-10 */
 }
 
 @keyframes scrollMarquee {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
 }
 
 @theme inline {
@@ -165,7 +183,28 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
   }
 }

@@ -120,8 +120,7 @@ export default function AboutUs() {
                                 </p>
 
                                 <p className="leading-relaxed">
-                                    People have believed in him for the best astrological predictions and solutions. Several institutions
-                                    have given him Recognition, Life Membership, and various accreditations.
+                                    People have believed in him for the best astrological predictions and solutions. Several institutions have given him Recognition, Life Membership, and various accreditations for his expertise in Astrology. His outstanding track record and achievements make him a popular choice and astrologer for Bollywood celebrities/ famous business persons, politicians, and Bureaucrats.
                                 </p>
                             </div>
                         </div>

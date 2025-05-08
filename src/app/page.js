@@ -204,7 +204,10 @@ const Horoscope = [
 export default function Home() {
   return (
     <main>
-      <section className="bg-orange-100">
+      <section>
+        <Image className='w-full' src="/images/navbar.png" width={500} height={500} unoptimized alt='Navbar' />
+      </section>
+      <section className="bg-orange-50">
         <div className="max-w-7xl mx-auto py-10">
           <div className="text-center">
             <h1 className="text-red-900 text-3xl font-semibold">Astrological Solutions for Life's Problems</h1>

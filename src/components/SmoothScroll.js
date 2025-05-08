@@ -22,7 +22,7 @@ export default function SmoothScroll({ children }) {
       const scroll = new LocomotiveScroll({
         el: containerRef.current,
         smooth: true,
-        lerp: 0.08,
+        lerp: 0.1,
       });
 
       // Clean up

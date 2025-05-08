@@ -74,6 +74,30 @@ export default function AstrologyServices() {
             price: "₹1499",
             icon: Gem,
             url: ""
+        },
+        {
+            id: 7,
+            title: "Get Past Life Reading and Analysis",
+            highlightPoints: [
+                "Explore unresolved past karmas",
+                "Understand recurring life issues",
+                "Get remedies to neutralize past-life impacts"
+            ],
+            price: "₹1799",
+            icon: Zap,
+            url: ""
+        },
+        {
+            id: 8,
+            title: "Get Vastu Analysis for your Home and Office",
+            highlightPoints: [
+                "On-site or remote Vastu inspection",
+                "Identify doshas affecting prosperity",
+                "Practical and easy-to-implement remedies"
+            ],
+            icon: Compass,
+            price: "₹1499",
+            url: ""
         }
     ];
 

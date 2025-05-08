@@ -9,6 +9,7 @@ import PanchangSection from '@/components/PanchangSection';
 import VedicProfileForms from '@/components/VedicProfileForms';
 import LogoSlider from '@/components/LogoSlider';
 import AstrologyServices from '@/components/AstrologyServices';
+import HeroSection from '@/components/HeroSection';
 
 const images = [
   { alt: "Amazon", imageUrl: "https://astroarunpandit.org/wp-content/uploads/2024/08/Group-3131.png" },
@@ -43,6 +44,7 @@ export default function Home() {
 
   return (
     <main>
+      <HeroSection />
       <LifeProblemsSection />
       <LogoSlider images={images} />
       <LogoSlider images={images2} isReverse={true} />

@@ -19,8 +19,22 @@ body {
   }
 }
 
+@keyframes spin-slowest {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .animate-spin-slow {
   animation: spin-slow 3s linear infinite;
+}
+
+.animate-spin-slowest {
+  animation: spin-slow 30s linear infinite;
 }
 
 .marquee-container {
@@ -226,4 +240,3 @@ body {
     }
   }
 }
-

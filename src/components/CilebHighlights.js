@@ -6,19 +6,22 @@ import 'swiper/css';
 
 const slides = [
     {
-        imageUrl: "/images/BG1.png",
+        imageUrl: "/images/Children Astrology.jpg",
     },
     {
-        imageUrl: "/images/BG2.png",
+        imageUrl: "/images/Court Astrology .jpg",
     },
     {
-        imageUrl: "/images/BG3.png",
+        imageUrl: "/images/Finance Astrology .jpg",
     },
     {
-        imageUrl: "/images/BG4.png",
+        imageUrl: "/images/Health Astrology.jpg",
     },
     {
-        imageUrl: "/images/BG1.png",
+        imageUrl: "/images/Property Astrology.jpg",
+    },
+    {
+        imageUrl: "/images/Career  Astrology.jpg",
     }
 ];
 
@@ -89,6 +92,8 @@ const CilebHighlights = () => {
                                 loading="eager"
                                 className="w-full h-full object-cover rounded-3xl border border-transparent group-hover:border-gray-400 transition-all duration-500"
                             />
+                            <div className="absolute inset-0 rounded-3xl border border-gray-400 opacity-0 group-hover:opacity-100 group-hover:animate-border"></div>
+                            <div className='absolute inset-0 bg-gradient-to-t from-black to-transparent bg-blend-multiply opacity-60' />
                         </div>
                     ))}
                 </div>

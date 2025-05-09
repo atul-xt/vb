@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowLoader(false), 500); // 3s
+    const timer = setTimeout(() => setShowLoader(false), 1000); // 3s
     return () => clearTimeout(timer);
   }, []);
 

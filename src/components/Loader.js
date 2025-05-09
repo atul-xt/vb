@@ -32,22 +32,23 @@ export default function Loader() {
                 <span className="py-3 w-24 bg-gray-300 animate-pulse rounded-2xl" />
                 <span className="py-3 w-24 bg-gray-300 animate-pulse rounded-2xl" />
             </div>
-            <div className="mt-5 max-w-[1300px] mx-auto h-12 bg-gray-300 animate-pulse rounded-xl"></div>
-            <div className="mt-5 py-40 w-full flex items-center justify-center bg-gray-300 animate-pulse">
+            <div className="mt-5 max-w-[1300px] mx-auto h-12 bg-gray-200 animate-pulse rounded-xl"></div>
+            <div className="mt-5 py-40 w-full flex items-center justify-center bg-gray-200 animate-pulse">
                 <div className="max-w-6xl mx-auto flex justify-between w-full">
                     <div className="">
                         <div className="space-y-3">
-                            <div className="py-6 min-w-md bg-gray-200 animate-pulse rounded-2xl" />
-                            <div className="py-6 w-80 bg-gray-200 animate-pulse rounded-2xl" />
-                            <div className="py-6 w-96 bg-gray-200 animate-pulse rounded-2xl" />
+                            <div className="py-6 min-w-md bg-gray-300 animate-pulse rounded-2xl" />
+                            <div className="py-6 w-80 bg-gray-300 animate-pulse rounded-2xl" />
+                            <div className="py-6 w-96 bg-gray-300 animate-pulse rounded-2xl" />
                         </div>
-                        <div className="mt-8">
-                            <div className="py-3 w-[20rem] bg-gray-200 animate-pulse rounded-2xl"></div>
+                        <div className="mt-8 space-y-2">
+                            <div className="py-2 w-[28rem] bg-gray-300 animate-pulse rounded-2xl"></div>
+                            <div className="py-2 w-[23rem] bg-gray-300 animate-pulse rounded-2xl"></div>
+                            <div className="py-2 w-[20rem] bg-gray-300 animate-pulse rounded-2xl"></div>
                         </div>
+                        <div className="mt-14 h-12 w-60 bg-gray-300 animate-pulse rounded-2xl" />
                     </div>
-                    <div className="h-72 w-72 bg-gray-200 animate-pulse rounded-full">
-
-                    </div>
+                    {/* <div className="h-72 w-72 bg-gray-200 animate-pulse rounded-full"></div> */}
                 </div>
             </div>
         </div>

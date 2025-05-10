@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Button from "./Button";
 
 const BannerSlider = () => {
     const heroSectionData = [
@@ -52,14 +53,13 @@ const BannerSlider = () => {
     return (
         <section className="h-[70vh] w-full overflow-hidden">
             <Swiper
-                effect={'fade'}
                 loop={true}
                 navigation={true}
                 autoplay={{
                     delay: 4000,
                     disableOnInteraction: false,
                 }}
-                modules={[EffectFade, Autoplay, Navigation]}
+                modules={[ Autoplay, Navigation]}
                 className="mySwiper h-full overflow-hidden">
                 {heroSectionData?.map((item) => (
                     <SwiperSlide className="relative">
@@ -72,14 +72,14 @@ const BannerSlider = () => {
                                     <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-white">
                                         {item.heading} <br /> <span className="text-orange-400">{item.subHeading}</span>
                                     </h1>
-                                    <p className="mt-6 text-gray-300 text-lg md:text-xl">{item.desc}</p>
-                                    <button
-                                        className={`mt-10 ${item.buttonStyle} hover:scale-95 duration-200 transition ease-linear active:scale-105 cursor-pointer flex gap-1 shadow-lg px-4 py-3 rounded-md text-sm font-medium`}>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5">
+                                    <p className="my-6 text-gray-300 text-lg md:text-xl">{item.desc}</p>
+                                    <Button
+                                        name={item.buttonTitle}
+                                        svg={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0 1 20.25 6v12A2.25 2.25 0 0 1 18 20.25H6A2.25 2.25 0 0 1 3.75 18V6A2.25 2.25 0 0 1 6 3.75h1.5m9 0h-9" />
-                                        </svg>
-                                        {item.buttonTitle}
-                                    </button>
+                                        </svg>}
+                                        style={item.buttonStyle}
+                                    />
                                 </div>
                                 {item.isZodiagSign && (
                                     <div className="flex-1">

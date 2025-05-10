@@ -5,6 +5,7 @@ import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Heart, MapPin, Calendar, Users } from "lucide-react"
+import Button from './Button';
 
 export default function EventCardSlider({ data }) {
     return (
@@ -44,9 +45,9 @@ export default function EventCardSlider({ data }) {
                                     <div className="text-xl font-bold text-black">01</div>
                                     <div className="text-xs font-semibold text-red-500">JAN</div>
                                 </div>
-                                <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md z-10">
+                                {/* <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md z-10">
                                     <Heart className="h-5 w-5 text-red-500 fill-red-500" />
-                                </div>
+                                </div> */}
                                 {/* <div className="absolute top-4 right-16 bg-white rounded-full p-1 shadow-md z-10">
                     <div className="h-6 w-6 rounded-full bg-teal-500"></div>
                 </div> */}
@@ -93,12 +94,20 @@ export default function EventCardSlider({ data }) {
                                         <span className="text-sm">By {puja.by}</span>
                                     </div>
                                     <div className="grid grid-cols-2 gap-2 mt-4">
-                                        <button className="py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-md transition-colors">
-                                            Book Now
-                                        </button>
-                                        <button className="py-2 px-4 bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium rounded-md transition-colors">
-                                            View Details
-                                        </button>
+                                        <Button
+                                            name="Book Now"
+                                            svg={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0 1 20.25 6v12A2.25 2.25 0 0 1 18 20.25H6A2.25 2.25 0 0 1 3.75 18V6A2.25 2.25 0 0 1 6 3.75h1.5m9 0h-9" />
+                                            </svg>}
+                                            style="bg-orange-600 text-white"
+                                        />
+                                        <Button
+                                            name="View Details"
+                                            svg={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="size-5">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                                            </svg>}
+                                            style="bg-white text-black"
+                                        />
                                     </div>
                                 </div>
                             </div>

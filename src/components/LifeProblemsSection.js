@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Button from './Button';
 
 const people = [
     {
@@ -163,12 +164,12 @@ const LifeProblemsSection = () => {
                                             <span className='ml-5 font-semibold bg-green-200 px-3 py-0.5 rounded-full text-green-600 text-xs'>{card.problemSolved}+ Problems Solved</span>
                                         </div>
                                         <div>
-                                            <button className="bg-white hover:scale-95 duration-200 transition ease-linear active:scale-105 hover:bg-orange-600 hover:text-white cursor-pointer text-red-900 flex gap-1 border border-red-800 shadow-lg px-4 py-2 rounded-md text-sm font-medium">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="size-5">
+                                            <Button
+                                                name="Know More"
+                                                svg={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="size-5">
                                                     <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-                                                </svg>
-                                                Know More
-                                            </button>
+                                                </svg>}
+                                            />
                                         </div>
                                     </div>
                                 </div>

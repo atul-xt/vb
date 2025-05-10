@@ -108,7 +108,7 @@ export default function AstrologyServices() {
                 <div className="relative flex items-center justify-center gap-4 mb-12">
                     <Star className="text-purple-600 w-5 h-5" />
                     <h2 className="font-serif text-2xl md:text-3xl text-purple-600">Astrology Services</h2>
-                    <div className="absolute top-14 left-1/2 -translate-x-1/2 w-36 h-[2px] bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
+                    <div className="absolute top-14 left-1/2 -translate-x-1/2 w-80 h-[3px] bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
                     <Star className="text-purple-600 w-5 h-5" />
                 </div>
 
@@ -119,7 +119,7 @@ export default function AstrologyServices() {
                             <div className="relative z-10 p-4 flex flex-col h-full">
                                 {Icon && <Icon className="w-10 h-10 text-pink-600 mb-4" />}
                                 <h3 className="font-serif text-lg text-purple-700 mb-3">{title}</h3>
-                                <ul className="space-y-2 mb-5">
+                                <ul className="space-y-2 mb-4">
                                     {highlightPoints.map((item, i) => (
                                         <li key={i} className="text-purple-700/70 text-sm pl-6 relative">
                                             <span className="absolute left-0 text-purple-500">✧</span>
@@ -127,12 +127,12 @@ export default function AstrologyServices() {
                                         </li>
                                     ))}
                                 </ul>
-                                <span className="text-xl font-medium text-purple-600 mt-auto mb-4">{price}</span>
+                                <span className="text-xl font-medium text-purple-600 mt-auto mb-5">{price}</span>
                                 <Link
                                     href="#"
-                                    className="inline-block bg-gradient-to-r from-orange-600 to-pink-500 text-white text-sm py-2 px-2 rounded-full font-medium tracking-wide text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_20px_rgba(138,108,255,0.5)]"
+                                    className="bg-orange-600 text-white hover:scale-95 duration-200 transition ease-linear active:scale-105 hover:bg-white hover:text-black hover:border hover:border-gray-300 cursor-pointer flex gap-1 justify-center shadow-lg px-3 py-2 rounded-md text-sm font-medium"
                                 >
-                                    Book Reading
+                                    Order Now
                                 </Link>
                             </div>
                         </div>

@@ -34,11 +34,12 @@ export default function Loader() {
             </div>
             <div className="mt-5 max-w-[1400px] mx-auto h-10 bg-gray-200 animate-pulse"></div>
             <div className="mt-3 p-2 h-[70vh] w-full flex gap-3">
-                <div className="h-full w-[72%] bg-gray-300 rounded-2xl animate-pulse" />
-                <div className="h-full w-[7%] bg-gray-300 rounded-2xl animate-pulse" />
-                <div className="h-full w-[7%] bg-gray-300 rounded-2xl animate-pulse" />
-                <div className="h-full w-[7%] bg-gray-300 rounded-2xl animate-pulse" />
-                <div className="h-full w-[7%] bg-gray-300 rounded-2xl animate-pulse" />
+                <div className="h-full w-[80%] bg-gray-300 rounded-2xl animate-pulse" />
+                <div className="h-full w-[5%] bg-gray-300 rounded-2xl animate-pulse" />
+                <div className="h-full w-[5%] bg-gray-300 rounded-2xl animate-pulse" />
+                <div className="h-full w-[5%] bg-gray-300 rounded-2xl animate-pulse" />
+                <div className="h-full w-[5%] bg-gray-300 rounded-2xl animate-pulse" />
+                <div className="h-full w-[5%] bg-gray-300 rounded-2xl animate-pulse" />
             </div>
         </div>
     );

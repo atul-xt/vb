@@ -6,35 +6,35 @@ import 'swiper/css';
 
 const slides = [
     {
-        imageUrl: "/images/Children Astrology.jpg",
-        title: "Children Astrology",
-        desc: "Get insights into your child's future, personality, and academic growth through astrology."
-    },
-    {
-        imageUrl: "/images/Court Astrology .jpg",
+        imageUrl: "https://img.freepik.com/free-photo/closeup-shot-person-writing-book-with-gavel-table_181624-57173.jpg?t=st=1746890618~exp=1746894218~hmac=52d06f991157a4d46f7904552744224af6e24043e69019d4b2c689f479a8fc5c&w=996",
         title: "Court Astrology",
         desc: "Understand the astrological factors influencing legal matters and court decisions in your life."
     },
     {
-        imageUrl: "/images/Finance Astrology .jpg",
+        imageUrl: "https://img.freepik.com/free-photo/business-concept-with-graphic-holography_23-2149160929.jpg?t=st=1746890669~exp=1746894269~hmac=8655814b8400ab3369502103b367561530f0eb91eec982ffe76a771a0cda5874&w=900",
         title: "Finance Astrology",
         desc: "Discover favorable periods for investments, wealth growth, and financial stability through your horoscope."
     },
     {
-        imageUrl: "/images/Health Astrology.jpg",
+        imageUrl: "https://img.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg?t=st=1746890675~exp=1746894275~hmac=3a70f480a117ce71151fba9ba2236707cdfe063529df7e4d2e5c74e50239119b&w=996",
         title: "Health Astrology",
         desc: "Explore health trends and potential medical issues based on your birth chart for better well-being."
     },
     {
-        imageUrl: "/images/Property Astrology.jpg",
+        imageUrl: "https://img.freepik.com/premium-photo/house-mock-up-young-engineer-looking-busy-involved-while-preparing-house-mock-up_259150-72838.jpg?w=996",
         title: "Property Astrology",
         desc: "Analyze the right time and direction for buying or selling property based on astrological guidance."
     },
     {
-        imageUrl: "/images/Career  Astrology.jpg",
+        imageUrl: "https://img.freepik.com/premium-photo/career-inscription-people-icons-virtual-screen-businessman-pressing-career_1085052-2320.jpg?w=1380",
         title: "Career Astrology",
         desc: "Find clarity in your professional path with astrological advice on job changes, promotions, and success."
-    }
+    },
+    {
+        imageUrl: "https://img.freepik.com/free-photo/numerology-concept-composition_23-2150169761.jpg?t=st=1746890516~exp=1746894116~hmac=69ee5278ba5ee128265ba3e0f983773d522080e5ab09020760089124755a3388&w=996",
+        title: "Children Astrology",
+        desc: "Get insights into your child's future, personality, and academic growth through astrology."
+    },
 ];
 
 
@@ -102,8 +102,8 @@ const CilebHighlights = () => {
                                 className={`w-full h-full object-cover rounded-3xl border border-transparent group-hover:border-gray-400 transition-all duration-500 ${index === activeIndex && ""}`}
                             />
                             <div className="absolute inset-0 z-10">
-                                <div className="absolute -left-22 w-64 top-1/2 -translate-y-1/2">
-                                    <h2 className="py-3 whitespace-nowrap text-xl font-serif px-10 -rotate-90 bg-orange-500 text-center rounded-full">
+                                <div className="absolute -left-[15rem] w-[35rem] top-1/2 -translate-y-1/2">
+                                    <h2 className="py-3 whitespace-nowrap text-xl font-serif px-10 -rotate-90 bg-gray-100/50 text-center rounded-full">
                                         {slide.title}
                                     </h2>
                                 </div>

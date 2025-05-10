@@ -40,7 +40,7 @@ const slides = [
 
 
 const CilebHighlights = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(slides.length - 1);
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -110,8 +110,8 @@ const CilebHighlights = () => {
                                 </div>
                                 <div className='absolute inset-0 top-[25rem] left-20 z-20 bg-gray-100/60 text-black max-w-md h-42 p-5 rounded-2xl'>
                                     <p className='mb-5'>{slide.desc}</p>
-                                    <Button 
-                                    name="Read More"
+                                    <Button
+                                        name="Read More"
                                     />
                                 </div>
                             </div>

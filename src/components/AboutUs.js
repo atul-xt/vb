@@ -41,7 +41,7 @@ export default function AboutUs() {
                             className="relative aspect-square overflow-hidden rounded-full border-4 border-indigo-300/20 shadow-lg shadow-indigo-900/30"
                         >
                             <Image
-                                src="/images/Dr.VinayBajrangi.webp"
+                                src="/images/Dr-Vinay-Bajrangi.png"
                                 alt="Dr. Vinay Bajrangi"
                                 width={1000}
                                 height={1000}

@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import Button from './Button';
 
 const slides = [
     {
@@ -103,12 +104,15 @@ const CilebHighlights = () => {
                             />
                             <div className="absolute inset-0 z-10">
                                 <div className="absolute -left-[15rem] w-[35rem] top-1/2 -translate-y-1/2">
-                                    <h2 className="py-3 whitespace-nowrap text-xl font-serif px-10 -rotate-90 bg-gray-100/50 text-center rounded-full">
+                                    <h2 className="py-3 whitespace-nowrap text-xl tracking-widest font-thin px-10 -rotate-90 bg-orange-500/60 text-white text-center rounded-full">
                                         {slide.title}
                                     </h2>
                                 </div>
-                                <div className='absolute inset-0 top-[27rem] left-20 z-20 bg-gray-100/50 max-w-md h-28 p-5 rounded-2xl'>
-                                    <p>{slide.desc}</p>
+                                <div className='absolute inset-0 top-[25rem] left-20 z-20 bg-gray-100/60 text-black max-w-md h-42 p-5 rounded-2xl'>
+                                    <p className='mb-5'>{slide.desc}</p>
+                                    <Button 
+                                    name="Read More"
+                                    />
                                 </div>
                             </div>
                             <div className="absolute inset-0 rounded-3xl border border-gray-400 opacity-0 group-hover:opacity-100 group-hover:animate-border"></div>
